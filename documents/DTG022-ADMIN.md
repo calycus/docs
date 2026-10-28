@@ -1,19 +1,30 @@
-# DTG022 — Pantallas de Soporte (ADMIN)
+# DTG022 — Informe Final de Pruebas Web Admin
 
-- **Aplicativo:** Aplicativo: Blu 2.0 - ADMIN
-- **Fecha:** Fecha elaboración: 28/10/2026
-- **Requerimiento:** Requerimiento #: 500325016
-- **Notas:** Pantallas de soporte de BluAdmin. Componentes: blu-admin-auth, blu-admin-web, blu-admin-personalization, blu-admin-config, blu-admin-commerce. Alcance del pase (DTG008): solo módulos admin (excluido BluPersonasApp y microservicios cbf-*). Tabla de evidencias de Test Plan pendiente de exportación desde Azure DevOps.
+Documento basado en **DTG015 Informe Final de Pruebas Web Admin Sprint 31**, adaptado a DTG022 Admin.
 
-## Calidad SonarCloud (prod)
+- **Aplicativo:** Blu 2.0 - Web Admin
+- **Fecha:** 28/10/2026 (America/Guayaquil)
+- **Requerimiento:** 500325016
+- **Base:** DTG015 Sprint 31 (casos funcionales + técnicos)
 
-| Componente | Bugs | Vulns | Code Smells | Dup% / Cov% / QG |
+## Componentes
+
+| Componente | Funcionales | Técnicas | Cobertura Sonar (prod) | QG |
 |---|---:|---:|---:|---|
-| blu-admin-auth | 0 | 0 | 0 | Dup 0.0% | Cov 94.4% | QG OK | prod |
-| blu-admin-web | 0 | 0 | 0 | Dup 0.0% | Cov 88.2% | QG OK | prod |
-| blu-admin-personalization | 0 | 0 | 0 | Dup 2.5% | Cov 83.1% | QG OK | prod |
-| blu-admin-config | 0 | 0 | 0 | Dup 0.3% | Cov 83.9% | QG OK | prod |
-| blu-admin-commerce | 0 | 0 | 0 | Dup 0.0% | Cov 84.3% | QG OK | prod |
+| blu-admin-auth | 26 | 22 | 94.4% | OK |
+| blu-admin-web | 8 | 2 | 88.2% | OK |
+| blu-admin-personalization | 22 | 14 | 83.1% | OK |
+| blu-admin-config | 46 | 20 | 83.9% | OK |
+| blu-admin-commerce | 26 | 50 | 84.3% | OK |
+| **TOTAL** | **128** | **108** | — | — |
 
-## Evidencias Azure
-Las filas de TestPlan/Suite/Caso quedan pendientes de exportación desde Azure DevOps (mismo formato que DTG022-APP).
+## Hojas del Excel
+
+1. **Hoja de Control** — metadatos DTG022 / req 500325016
+2. **RESUMEN_COMPONENTES** — SonarCloud + conteos por blu-admin-*
+3. **CASOS_PRUEBA_FUNCIONAL** — casos Azure WI + columna `COMPONENTE (blu-admin)`
+4. **CASOS_PRUEBA_TECNICAS** — pruebas API/BACK + columna `COMPONENTE (blu-admin)`
+
+## Archivo
+
+`documents/DTG022 - Informe Final de Pruebas Web Admin.xlsx`
